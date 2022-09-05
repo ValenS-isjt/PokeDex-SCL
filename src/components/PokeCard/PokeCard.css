@@ -1,0 +1,86 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 200px;
+  box-shadow: 3px 3px 10px yellow;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 15px;
+  background-color: lightgray;
+}
+
+.typeFire {
+  background-color: lightsalmon;
+}
+
+.typeElectric {
+  background-color: lightgoldenrodyellow;
+}
+
+.typePoison {
+  background-color: plum;
+}
+
+.typePsychic {
+  background-color: moccasin;
+}
+
+.typeBug {
+  background-color: olive;
+}
+
+.typeGrass {
+  background-color: lightgreen;
+}
+
+.typeFighting {
+  background-color: lightcoral;
+}
+
+.typeGround {
+  background-color: sandybrown;
+}
+
+.typeGhost {
+  background-color: gray;
+}
+
+.typeWater {
+  background-color: lightblue;
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3466af;
+  text-transform: capitalize;
+  width: "100%";
+  text-align: "left";
+}
+
+.horizontal-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-id {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.card-types {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+}
