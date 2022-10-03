@@ -20,7 +20,23 @@ export const getType = (mainType) => {
       return "typeBug";
     case "psychic":
       return "typePsychic";
+    case "flying":
+      return "typeFlying";
+    case "rock":
+      return "typeRock";
+    case "ice":
+      return "typeIce";
+    case "steel":
+      return "typeSteel";
+    case "dragon":
+      return "typeDragon";
+    case "dark":
+      return "typeDark";
+    case "fairy":
+      return "typeFairy";
     default:
       return null;
   }
 };
+
+

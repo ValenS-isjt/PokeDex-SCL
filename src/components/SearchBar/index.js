@@ -1,8 +1,15 @@
 import "./searchbar.css";
+import { useState } from "react";
 
-export const SearchBar = ({ searchText, setSearchText }) => {
+export const SearchBar = ({ setSearchText }) => {
+  const [text, setText] = useState("");
+
+  const handleClick = () => {
+    setSearchText(text);
+  };
+
   const handleChange = (event) => {
-    setSearchText(event.target.value);
+    setText(event.target.value);
   };
 
   return (
@@ -10,10 +17,13 @@ export const SearchBar = ({ searchText, setSearchText }) => {
       <span>Ingrese el nombre del pokemon que desea buscar</span>
       <input
         type="text"
-        value={searchText}
+        value={text}
         onChange={handleChange}
         placeholder="Searching..."
       />
+      <button type="submit" className="search-button" onClick={handleClick}>
+        Buscar
+      </button>
     </div>
   );
 };

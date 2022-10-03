@@ -4,7 +4,7 @@
 }
 
 .search-container span {
-  margin-top: 40px;
+ 
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -21,4 +21,25 @@
 .search-container input::placeholder {
   color: #3466af;
   font-weight: bold;
+}
+
+.search-button{
+  background-color: #3466af;
+  color: white;
+  height: 25px;
+  width: 15%;
+  font-weight:bold;
+  border-radius: 45%;
+  box-shadow: 0px 5px 10px #3466af;
+  float: right;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
+  
+}
+
+.search-button:hover{
+background: #7c99c4;
+color: black;
+
 }

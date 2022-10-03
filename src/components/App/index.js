@@ -1,15 +1,17 @@
-import { SearchBar } from "../SearchBar";
 import "./app.css";
-import pokelogo from "../../assets/images/poke-logo.png";
+
 import { useEffect, useState } from "react";
-import { PokeList } from "../PokeList";
+
+import { Navbar } from "../Navbar";
+import { Inicio } from "../Inicio";
 
 export const App = () => {
   const [pokemons, setPokemons] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [currentPage, setCurrentPage] = useState(0);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=900")
       .then((response) => response.json())
       .then((data) => {
         setPokemons(data.results);
@@ -19,11 +21,15 @@ export const App = () => {
 
   return (
     <div className="App">
-      <img src={pokelogo} alt="logo" className="logo" />
-      <SearchBar searchText={searchText} setSearchText={setSearchText} />
-      {searchText.length > 1 && (
-        <PokeList pokemons={pokemons} searchText={searchText} />
+      <Navbar setCurrentPage={setCurrentPage} />
+      {currentPage === 0 && (
+        <Inicio
+          pokemons={pokemons}
+          searchText={searchText}
+          setSearchText={setSearchText}
+        />
       )}
+      {currentPage === 1 && <div>Lista</div>}
     </div>
   );
 };

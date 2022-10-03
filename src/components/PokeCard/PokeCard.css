@@ -12,6 +12,21 @@
   background-color: lightgray;
 }
 
+.card:hover{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 280px;
+  box-shadow: 3px 3px 10px yellow;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 15px;
+  
+}
+
 .typeFire {
   background-color: lightsalmon;
 }
@@ -50,6 +65,34 @@
 
 .typeWater {
   background-color: lightblue;
+}
+
+.typeFlying {
+  background-color: rgb(114, 197, 224);
+}
+
+.typeRock {
+  background-color: rgb(114, 99, 87);
+}
+
+.typeIce {
+  background-color: rgb(206, 236, 247);
+}
+
+.typeSteel {
+  background-color: rgb(194, 196, 197);
+}
+
+.typeDragon {
+  background-color: rgb(248, 87, 46);
+}
+
+.typeDark {
+  background-color: rgb(68, 63, 70);
+}
+
+.typeFairy {
+  background-color: rgb(250, 170, 250);
 }
 
 .card-name {

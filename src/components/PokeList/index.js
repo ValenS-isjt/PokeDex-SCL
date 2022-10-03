@@ -21,7 +21,7 @@ export const PokeList = ({ pokemons, searchText }) => {
   return (
     <div className="container">
       {pokemonData.map((pokemon) => {
-        return <PokeCard pokemon={pokemon} />;
+        return <PokeCard pokemon={pokemon} key={pokemon.id} />;
       })}
     </div>
   );
