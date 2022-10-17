@@ -14,7 +14,7 @@ export const SearchBar = ({ setSearchText }) => {
 
   return (
     <div className="search-container">
-      <span>Ingrese el nombre del pokemon que desea buscar</span>
+      <span>Ingrese el nombre del pokemon buscado</span>
       <input
         type="text"
         value={text}

@@ -4,7 +4,6 @@
 }
 
 .search-container span {
- 
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -23,23 +22,21 @@
   font-weight: bold;
 }
 
-.search-button{
+.search-button {
   background-color: #3466af;
   color: white;
-  height: 25px;
+  height: 80%;
   width: 15%;
-  font-weight:bold;
+  font-weight: bold;
   border-radius: 45%;
   box-shadow: 0px 5px 10px #3466af;
   float: right;
   margin: auto;
   margin-top: 30px;
   cursor: pointer;
-  
 }
 
-.search-button:hover{
-background: #7c99c4;
-color: black;
-
+.search-button:hover {
+  background: #7c99c4;
+  color: black;
 }

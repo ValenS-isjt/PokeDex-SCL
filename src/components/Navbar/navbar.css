@@ -1,4 +1,7 @@
 ul {
+  color: white;
+  height: 25px;
+  font-weight: bold;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,27 +9,33 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 30px;
-
   width: 90%;
 }
 
 li {
   height: 80%;
-  background-color: red;
-  border-radius: 10px;
-  padding: 10px;
+  background-color: #132af7;
   cursor: pointer;
+  box-shadow: 0px 5px 5px #3466af;
+  float: right;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 45%;
+  width: 3%;
 }
 
 li:hover {
-  background-color: green;
+  background: #7c99c4;
+  color: black;
 }
 
 nav {
-  background-color: aqua;
-  width: 100%;
-  height: 50px;
+  background-color: #ebf563;
+  width: 200%;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 0px 20px 20px #ebf563;
 }
